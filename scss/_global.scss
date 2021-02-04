@@ -15,3 +15,17 @@ h6 {
   @include body-font;
   font-weight: 700;
 }
+
+.logo {
+  height: 50px;
+}
+
+@media (max-width: 350px) {
+  .logo {
+    height: 30px;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+}

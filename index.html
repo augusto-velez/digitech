@@ -31,25 +31,26 @@
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"><img src="/img/logo.png" height="100px" alt="" srcset=""></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <a class="navbar-brand" href="#"><img class="logo" src="/img/logo.png"></a>
+    <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon1"><span></span><span></span><span></span></div>
+    </button>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="#inicio">Inicio</a>
+          <a class="nav-link mr-4" href="#inicio">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#nosotros">Nosotros</a>
+          <a class="nav-link mr-4" href="#nosotros">Nosotros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#servicios">Servicios</a>
+          <a class="nav-link mr-4" href="#servicios">Servicios</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contacto">Contacto</a>
+          <a class="nav-link mr-4" href="#contacto">Contacto</a>
         </li>
       </ul>
     </div>
@@ -127,7 +128,7 @@
         <div class="col-lg-6 order-lg-2 text-white showcase-img"
           style="background-image: url('img/bg-showcase-1.jpeg');"></div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h2>Consultoría en TI y TIC</h2>
+          <h2>Consultoría en TI &amp; TIC</h2>
           <p class="lead mb-0">Brindamos respuesta a sus necesidades e inquietudes en contar con una arquitectura
             eficiente de TI así como mejora continua de los servicios de networking, comunicaciones, soporte de TI,
             automatización y transformación digital.</p>
@@ -145,10 +146,8 @@
         <div class="col-lg-6 order-lg-2 text-white showcase-img"
           style="background-image: url('img/bg-showcase-3.jpeg');"></div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h2>Easy to Use &amp; Customize</h2>
-          <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper
-            customization options. Out of the box, just add your content and images, and your new landing page will be
-            ready to go!</p>
+          <h2>Mesa de ayuda</h2>
+          <p class="lead mb-0">Asistencia telefónica o remota a los problemas y necesidades que se presenten en las actividades de la empresa. Manejo de tickets y SLAs de atencion.</p>
         </div>
       </div>
     </div>
@@ -168,7 +167,7 @@
           <h5 class="mb-4">Lima, Perú</h5>
         </div>
       </div>
-      <img src="/img/logo.png" height="100px"/>
+      <img class="logo" src="/img/logo.png" />
       <div class="row">
       </div>
     </div>
@@ -209,7 +208,8 @@
               <a href="#contacto">Contacto</a>
             </li>
           </ul>
-          <p class="text-muted small mb-6 mb-lg-0"><i class="fa fa-envelope mr-2"></i>alberto.velez@digitechnology.com.pe</p>
+          <p class="text-muted small mb-6 mb-lg-0"><i
+              class="fa fa-envelope mr-2"></i>alberto.velez@digitechnology.com.pe</p>
           <p class="text-muted small mb-6 mb-lg-0"><i class="fa fa-phone-square mr-2"></i>+51 999 394 898</p>
           <p class="text-muted small mb-6 mb-lg-0"><i class="fa fa-globe mr-2"></i>Lima, Peru.</p>
         </div>
@@ -218,9 +218,13 @@
             <li class="list-inline-item">
               <a href="#">
                 <i class="fab fa-linkedin fa-2x fa-fw mb-2"></i>
-                <p class="text-muted small mb-6 mb-lg-0"><i class="fa fa-copyright mr-2"></i>Digitechnology & Services
-                  2020. All Rights Reserved.</p>
-              </a>
+              </a>  
+                <div class="row justify-content-center mx-2">
+                  <i class="fa fa-copyright mr-1 text-muted"></i>
+                  <p class="text-muted small mb-1 mb-lg-0">Digitechnology & Services
+                    2021.&nbsp;</p>
+                  <p class="text-muted small mb-6 mb-lg-0">All Rights Reserved.</p>
+                </div>
             </li>
           </ul>
         </div>
@@ -231,6 +235,23 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      $('.first-button').on('click', function () {
+
+        $('.animated-icon1').toggleClass('open');
+      });
+      $('.second-button').on('click', function () {
+
+        $('.animated-icon2').toggleClass('open');
+      });
+      $('.third-button').on('click', function () {
+
+        $('.animated-icon3').toggleClass('open');
+      });
+    });
+  </script>
 
 </body>
 
